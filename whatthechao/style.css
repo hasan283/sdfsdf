@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Werner Italic';
+    src: url('fonts/werner_italic-webfont.woff2') format('woff2'),
+        url('fonts/werner_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Werner Regular';
+    src: url('fonts/werner_regular-webfont.woff2') format('woff2'),
+        url('fonts/werner_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Werner Regular';
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px 65px;
+}
+
+.header h3 {
+    font-family: 'Werner Regular';
+    font-size: 2.5em;
+    padding: 0;
+    margin: 0;
+    color: black;
+    webkit-animation: spin 5s linear infinite;
+    -moz-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+    animation-direction: normal;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.navbar .menu {
+    font-size: 1.1em;
+    text-align: left;
+    list-style: none;
+    color: black;
+}
+
+.navbar .menu .list-style {
+    padding-bottom: 0.5em;
+}
+
+.navbar .menu a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    font-weight: normal;
+}
+
+.navbar .menu a:hover {
+    color: #4963d8;
+}
